@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Bright Hotel">
+    <title>Bright Hotel - Welcome</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+
+
+<body>
+    <div class="container">
+        <header>
+
+            <img class="header-logo" src="img/bright-hotel-logo.svg" alt="">
+            <img class="header-img" src="img/hotel-bar.webp" alt="">
+        </header>
+        <nav>
+            <a class="active" href="index.html">Welcome</a>
+            <a href="find-us.html">Find us</a>
+            <a href="book.html">Book</a>
+            <a href="menu.html">Menu</a>
+
+        </nav>
+        <main>
+            <h1>Welcome to Bright Hotel</h1>
+            <article>
+                <h2>Our reception</h2>
+                <img src="img/hotel-reception.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum iusto ipsum dolores magnam,
+                    est deleniti veniam quod, deserunt nisi nostrum recusandae beatae provident assumenda repellat neque
+                    repudiandae, consequatur voluptatibus.</p>
+            </article>
+            <article>
+                <h2>Let us show you around</h2>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="img/hotel-garden.webp" alt="" style="width:100%">
+                        <div class="text">Our garden</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/hotel-sofa.webp" alt="" style="width:100%">
+                        <div class="text">Comfortable sofas</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/hotel-lounge.webp" alt="" style="width:100%">
+                        <div class="text">Our lounge</div>
+                    </div>
+
+                    <a class="prev" href="#" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" href="#" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+
+            </article>
+        </main>
+        <footer>
+            <p>Hotell Bright | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56</p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

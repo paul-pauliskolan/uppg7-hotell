@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Bright Hotel">
+    <title>Bright Hotel - Welcome</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+
+<body>
+    <div class="container">
+        <header>
+
+            <img class="header-logo" src="img/bright-hotel-logo.svg" alt="">
+            <img class="header-img" src="img/hotel-bar.webp" alt="">
+        </header>
+        <nav>
+            <a href="index.html">Welcome</a>
+            <a href="find-us.html">Find us</a>
+            <a class="active" href="book.html">Book</a>
+            <a href="menu.html">Menu</a>
+
+        </nav>
+        <main>
+            <h1>Book a room</h1>
+            <article>
+                <h2>Book here</h2>
+                <form action="thanks.html">
+                    <fieldset>
+
+                        <legend>Please fill in</legend>
+
+                        <label for="fname">First name</label>
+                        <input id="fname" type="text" required>
+
+                        <label for="lname">Last name</label>
+                        <input id="lname" type="text" required>
+
+                        <label for="email">Email</label>
+                        <input id="email" required>
+
+                        <label for="mobile">Mobile number</label>
+                        <input id="mobile" required>
+                        <label for="arrival-time">Arrival</label>
+                        <input type="datetime-local" id="arrival-time" name="meeting-time" min="2022-06-22T00:00"
+                            max="2024-12-14T00:00">
+                        <label for="departure-time">Separture</label>
+                        <input type="datetime-local" id="departure-time" name="meeting-time" min="2022-06-22T00:00"
+                            max="2024-12-14T00:00">
+
+                        <label>Number of adults
+                            <select name="adults">
+                                <option value="">(select one)</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </label>
+
+                        <label>Number of children
+                            <select name="children">
+                                <option value="">(select one)</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </label>
+
+                        <button type="submit">Send</button>
+                    </fieldset>
+                </form>
+            </article>
+            <article>
+                <h2>One of our rooms</h2>
+                <img class="img-front" src="img/hotel-double-room.webp" alt="" width="600" height="450">
+            </article>
+        </main>
+        <footer>
+            <p>Hotell Bright | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
